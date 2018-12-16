@@ -1,0 +1,127 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">Quiz</h1>
+
+<form action="/homePage" method="POST" class="lead text-position-par1">
+    <label class="emphasize">
+        1. Which of the following remains static in a C++ program?
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="1" /> Class
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="2" /> Object
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="3" /> Class and Object
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="4" /> None of the above
+    </label>
+
+    <label class="emphasize">
+        2. We don't need to explicitly deallocate dynamically created memory in C++.
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="1" /> true
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="2" /> false
+    </label>
+
+    <label class="emphasize">
+        3. Comments in C++ program is written by using which of the following. Check all that apply.
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test11"/> //
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test12"/> /* */
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test13"/> #
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test14"/> **
+    </label>
+
+    <label class="emphasize">
+        4. Which of the following is returned by the operating system if a C++ program completes successfully?
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="1" /> No value returned
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="2" /> -1
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="3" /> 1
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="4" /> 0
+    </label>
+
+    <label class="emphasize">
+        5. Which of the following denote advantages of inheritance?
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="1" /> Saves program development time
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="2" /> Code reusability
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="3" /> Saves program development time and code reusability
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="4" /> It allows for increased security
+    </label>
+    <label>
+        <input type="hidden" name="cPlusQuiz">
+    </label>
+    <label>
+        <button type="submit" class="btn btn-lg btn-secondary">Submit</button>
+    </label>
+</form>
+

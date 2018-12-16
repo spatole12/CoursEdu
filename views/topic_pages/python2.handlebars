@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">Basic Syntax</h1>
+
+<div class="text-position-par1">
+	<p class="lead">Python uses variables, which refer to memory locations in your system, to store data. Thus, there are two parts to data storage. One is the name of the variable, which represents your data, and the other is the actual memory block in your system that stores the actual data. The variable name will contain a reference to the memory block and the type of the data is stored in the memory block rather than with the name (there is no need to explicitly state the data type when assigning to a variable)</p>
+	
+    <p class="lead">There are five major data types in Python, as shown below. We will discuss the first three in this section and cover the remaining two in the next section.</p>
+
+	<ul class="lead emphasize">
+		<li>Numbers</li>
+		<li>String</li>
+		<li>List</li>
+		<li>Tuple</li>
+		<li>Dictionary</li>
+	</ul>
+
+	<p class="lead">Numbers consist of integers and floating point values (represent decimal values). Strings consist of characters encapsulated within double or single quotes. Note that strings, along with numbers and tuples are considered immutable. That is they cannot be changed in place after assignment. However, you can quite easily reassign a variable to a new value. Dictionaries, lists, and sets (special structure for storing unique values) are considered mutable, so once a such a structure is assigned a group of values, one of those values may be modifed without having to create and reassign a completely new structure.</p>
+	
+	<img src="/public/css/pic21.png" alt="Issue displaying image!">
+	
+	<p class="lead">Lists are a structure that allow multiple data (potentially of different types) to be grouped and stored together. Lists have no fixed size and provide many useful and standard methods that allow accessing, updating, and deleteing particular elements. Accessibility of elements in lists are particularly flexible, with the ability to slice and return a portion of a list. See the above code for more specifics related to basic Python syntax.</p>
+	
+  <form action="/python_1" method="Post" class="lead">
+          <button type="submit" class="btn btn-lg btn-secondary button-position">Prev</button>
+      </form>
+  <form action="/python_3" method="POST" class="lead">
+    <button type="submit" class="btn btn-lg btn-secondary button-position">Next</button>
+  </form>
+</div>

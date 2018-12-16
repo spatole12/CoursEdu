@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">Functions and Classes</h1>
+
+<div class="text-position-par1">
+    <p class="lead">Functions in Python allow for a group of related statements and variables to be bundled together into a box. This box, with optional input parameters, will perform some function and output a desired outcome each time it is used. Functions may be called within themselves, which is called recursion. During recursion, a function will call itself with modified parameters along with the other group of statements inside the function. This will result in the functions calling itself multiple times, since each time it will call itself again. This process must be stopped with a based case condition at the beginning of the function, where if a condition is satisfied after multiple recursive calls to the function, the function will return and cascade back to the original function call. The result is a sort of iterative procedure similar to loops, but using functions</p>
+    
+    <img src="/public/css/pic24.png" alt="Issue displaying image!" class="pic24">
+
+    <p class="lead">Python also contains classes, which are essentially blueprints for more specific objects. A class may contains multiple variables and functions in it. In order to use a class, we must first create an object, which is a specific instance of the class. This instance can then use the variables and functions of the class to perform various actions that are specific to this instance. This means we can create another instance of the same class, which will also have access to functions and variables of the same class, but may perform a different set of actions (perhaps in a different order or using different parameters), which are specific to this particular instance of the class. So we have two different instances of the same class that are based on the same functions and variables, but may have different values since they were executed differently.</p>
+    
+    <img src="/public/css/pic25.png" alt="Issue displaying image!" class="pic25">
+    
+    <p class="lead">Classes may have specific methods, like the "__init__(self)" method, which basically acts like a constructor and allows an object to be initialized with particular values when it is created. See the code below for Python specific syntax for classes and funtions.</p>
+    
+    <img src="/public/css/pic26.png" alt="Issue displaying image!" class="pic26">
+
+    <form action="/python_4" method="Post" class="lead">
+        <button type="submit" class="btn btn-lg btn-secondary button-position">Prev</button>
+    </form>
+    <form action="/python_6" method="POST" class="lead">
+        <button type="submit" class="btn btn-lg btn-secondary button-position">Next</button>
+    </form>
+</div>

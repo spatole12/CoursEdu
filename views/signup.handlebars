@@ -1,0 +1,24 @@
+    <form class="form-signin" id="signup-form" method="post" action="/signup">
+    <fieldset>
+        
+        <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+
+        <label>Email<span class="required">*</span></label>
+<!--        <label for="inputEmail" class="sr-only">Email address</label>-->
+        <input type="email" id="signUpInputEmail" class="form-control" name="signUpEmailName" placeholder="xxxx@xxx.com" required autofocus>
+
+        <p></p>
+        <label>Password<span class="required">*</span></label>
+<!--        <label for="inputPassword" class="sr-only">Password</label>-->
+        <input type="password" id="signUpInputPassword" onchange="validationPassword()" class="form-control" name="signUpPassWord" placeholder="*******" required>
+        
+        <label>Confirm Password<span class="required">*</span></label>
+<!--        <label for="inputPassword" class="sr-only">Password</label>-->
+        <input type="password" id="signUpConfirmInputPassword" onkeyup="validationPassword()" class="form-control" name="signUpConfirmPassWord" placeholder="*******" required>
+
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+        <p class="form-create text-size">Already have an account?<a href="/login"> Sign in</a></p>
+        </fieldset>
+    </form>
+

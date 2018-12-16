@@ -1,0 +1,36 @@
+{
+  "name": "cs546_final_project",
+  "version": "1.0.0",
+  "description": "Computer science learning website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./tasks/seed.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushmithr/Web-Programming---Final-Project.git"
+  },
+  "author": "Sushmith Ramesh 10443199, Weijia Zhou 10429862, Xuena Zhang 10429679, Shivani Patole 10442077",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sushmithr/Web-Programming---Final-Project/issues"
+  },
+  "homepage": "https://github.com/sushmithr/Web-Programming---Final-Project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "mongodb": "^3.1.10",
+    "node-uuid": "^1.4.8",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "progressbar.js": "^1.0.1",
+    "uuid": "^3.3.2",
+    "xss": "^1.0.3"
+  }
+}

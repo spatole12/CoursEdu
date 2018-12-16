@@ -1,0 +1,23 @@
+
+<form class="form-signin" method="post" action="/login">
+    
+    <h1 class="h3 mb-3 font-weight-normal">CoursEdu</h1>
+
+    {{#if error}}
+    <div class="alert alert-danger" role="alert">{{error}}</div>
+    {{/if}}
+    <label>Email</label>
+
+    <label for="loginInputEmail">
+    <input type="email" id="loginInputEmail" class="form-control" name="inputEmailName" placeholder="xxxx@xxx.com" required autofocus>
+    </label>
+    
+    <label>Password<a class="form-forget_password text-size" href="/www.google.com">Forgot Password?</a></label>
+
+    <label for="loginInputPassword">
+    <input type="password" id="loginInputPassword" class="form-control" name="inputPassWord" placeholder="*******" required>
+    </label>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="form-create text-size">Don't have an account yet? <a  href="/signup" class="signup">Sign up</a></p>
+</form>

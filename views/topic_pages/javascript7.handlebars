@@ -1,0 +1,149 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">Quiz</h1>
+
+<form action="/homePage" method="POST" class="lead text-position-par1">
+    <label class="emphasize">
+        1. Which type of loop requires that you set, bound, and update the iterator value?
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="1" id="q1_option1" /> "For" Loop
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="2" id="q1_option2" /> "While" Loop
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="3" id="q1_option3" /> "Round" Loop
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="4" id="q1_option4" /> "Fruit" Loop
+    </label>
+
+    <label class="emphasize">
+        2. Can you convert a string to an integer? If so, how?
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="1" id="q2_option1" /> Yes, use the "convertInt()" function
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="2" id="q2_option2" /> Yes, use the "int()"" function
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="3" id="q2_option3" /> No
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="4" id="q2_option4" /> Yes, use the "parseInt()" function
+    </label>
+
+    <label class="emphasize">
+        3. Which type of control statement is used when we want to iterate as long as a condition evaluates to true?
+    </label>
+    <label>
+        <input type="radio" name="user_test3" value="1" id="q3_option1" /> "if ... else"
+    </label>
+    <label>
+        <input type="radio" name="user_test3" value="2" id="q3_option2" /> "While" Loop
+    </label>
+    <label>
+        <input type="radio" name="user_test3" value="3" id="q3_option3" /> "For" Loop
+    </label>
+    <label>
+        <input type="radio" name="user_test3" value="4" id="q3_option4" /> Strings
+    </label>
+
+    <label class="emphasize">
+        4. How do we generally pass data between files and to other development layers in JavaScript?
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="1" id="q4_option1" /> Using strings
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="2" id="q4_option2" /> Using objects
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="3" id="q4_option3" /> Using loops
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="4" id="q4_option4" /> Using "console.log()"
+    </label>
+
+    <label class="emphasize">
+        5. How can we add a key and value pair to an object in JavaScript? Check all that apply.
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test11" id="q5_option1"/> myObj["transportation"] = "car"
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test12" id="q5_option2"/> myObj.exercise = "jogging"
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test13" id="q5_option3"/> myObj[some_thing] = "delicious" ("some_thing" is a previously defined variable)
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test14" id="q5_option4"/> myObj.add("season", "Spring")
+    </label>
+
+    <label class="emphasize">
+        6. How do we install a node package through the node package manager? How do we make sure to save the package to our package.json file?
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="1" id="q6_option1" /> npm get "name_of_package"; use the "-s" modifier at the end
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="2" id="q6_option2" /> npm install "name_of_package"; use the "--s" modifier at the end
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="3" id="q6_option3" /> npm install "name_of_package"; use the "--save" modifier at the end
+    </label>
+    <label>
+        <input type="radio" name="user_test5" value="4" id="q6_option4" /> npm get "name_of_package"; use the "--save" modifier at the end
+    </label>
+    <label>
+        <input type="hidden" name="JavaScriptQuiz">
+    </label>
+    <label>
+        <button type="submit" class="btn btn-lg btn-secondary">Submit</button>
+    </label>
+</form>
+

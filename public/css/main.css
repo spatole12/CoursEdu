@@ -1,0 +1,142 @@
+.change-size1 {
+	font-size: 20px;
+}
+
+.change-size2 {
+	font-size: 16px;
+}
+
+.change-color {
+	font-size: 15px;
+	color:#6A6262;
+}
+
+.modify {
+	display: inline;
+}
+
+.button-position {
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	left: 260px;
+	bottom: 5px;
+}
+
+.emphasize {
+	font-weight: bolder;
+}
+
+label{
+    display: block;
+}
+
+.text-position-head {
+	text-align: center;
+	top: 65px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.text-position-par1 {
+	width: 50%;
+	text-align: center;
+	top: 85px;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.pic5 {
+	width: 300px;
+	height: 300px;
+}
+
+.pic6 {
+	width: 150px;
+	height: 100px;
+}
+
+.pic7 {
+	transform: scale(1, 1);
+}
+
+.pic8 {
+	transform: scale(0.9, 0.9);
+}
+
+.pic9 {
+	transform: scale(0.9, 0.9);
+}
+
+.pic10 {
+	transform: scale(0.9, 0.9);
+}
+
+.pic12 {
+	transform: scale(0.95, 0.95);
+}
+
+.pic13 {
+	transform: scale(0.95, 0.95);
+}
+.pic14 {
+	transform: scale(0.95, 0.95);
+}
+.pic15 {
+	transform: scale(0.95, 0.95);
+}
+.pic16 {
+	transform: scale(0.95, 0.95);
+}
+.pic17 {
+	transform: scale(0.95, 0.95);
+}
+
+
+.pic18 {
+	transform: scale(0.95, 0.95);
+} 
+.font_java {
+font : bold;
+}
+
+.link_t{
+	color:#006ce2;
+}
+
+.pic19 {
+	width: 400px;
+	height: 200px;
+}
+
+.pic22 {
+	transform: scale(0.95, 0.95);
+}
+
+.pic24 {
+	width: 550px;
+	height: 350px;
+}
+
+.pic25 {
+	width: 450px;
+	height: 350px;
+}
+
+.pic26 {
+	transform: scale(0.95, 0.95);
+}
+
+.pic27 {
+	width: 650px;
+	height: 350px;
+}
+
+.pic30 {
+	width: 350px;
+	height: 350px;
+}

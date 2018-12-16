@@ -1,0 +1,127 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">Quiz</h1>
+
+<form action="/homePage" method="POST" class="lead text-position-par1">
+    <label class="emphasize">
+        1. Which of the following can be operands of arithmetic operators?
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="1" /> Numeric
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="2" /> Boolean
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="3" /> Characters
+    </label>
+    <label>
+        <input type="radio" name="user_test1" value="4" /> Both numeric and characters
+    </label>
+
+    <label class="emphasize">
+        2. Which of these are selection statements in Java?
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="1" /> if()
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="2" /> for()
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="3" /> Continue
+    </label>
+    <label>
+        <input type="radio" name="user_test2" value="4" /> Break
+    </label>
+
+    <label class="emphasize">
+        3. The while loop repeats a set of code while the condition is not met?
+    </label>
+    <label>
+        <input type="radio" name="user_test3" value="1" /> true
+    </label>
+    <label>
+        <input type="radio" name="user_test3" value="2" /> false
+    </label>
+
+    <label class="emphasize">
+        4. Which of the following is not OOPS concept in Java?
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="1" /> Inheritance
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="2" /> Encapsulation
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="3" /> Polymorphism
+    </label>
+    <label>
+        <input type="radio" name="user_test4" value="4" /> Compilation
+    </label>
+
+    <label class="emphasize">
+        5. Select all the wrapper classes in Java from the following.
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test11"/> byte
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test12"/> character
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test13"/> integer
+    </label>
+    <label>
+        <input type="checkbox" name="checkbox_test14"/> var
+    </label>
+    <label>
+        <input type="hidden" name="JavaQuiz">
+    </label>
+    <label>
+        <button type="submit" class="btn btn-lg btn-secondary">Submit</button>
+    </label>
+</form>
+

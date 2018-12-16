@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+<h1 class="cover-heading text-position-head">Discussion here!</h1>
+
+<div class="lead text-position-par1">
+  {{#if error}}
+  <div class="alert alert-danger" role="alert">{{error}}</div>
+  {{/if}}
+  <form action="/Discussion" id="usrform" name="a" method="POST">Topic Name:
+    <label for="topic_name" class="modify">
+      <input type="text" name="topicName" placeholder="Topic name" id="topic_name">
+    </label>
+    <label for="textarea1" class="modify">
+      <textarea rows="4" cols="50" name="description" id="textarea1" placeholder="Add a discussion"></textarea>
+      <br>
+    </label>
+    <input type="submit" value="Add Discussion">
+  </form>
+  {{#each discussion}}
+  <div class="container">
+    <div class="col-sm-12">
+      <div class="panel panel-white post panel-shadow">
+
+        <div class="post-description pull-left">
+          <div class="pull-left meta">
+            <div class="title h5 pull-left">
+              <a>Topic Name:</a>
+              {{topicName}}
+              <h2 class="change-color">{{timestamp}}</h2>
+            </div>
+          </div>
+          <br>
+          <h3 class="pull-left  change-size1">Content: </h3>
+          <h2 class="pull-left change-size1"> {{description}}</h2>
+        </div>
+
+        <div class="post-footer ">
+          <div class="input-group">
+            <label for="{{discussion_id}}userComment"></label>
+            <input class="form-control" id="{{discussion_id}}userComment" type="text" placeholder="Comment">
+            <input type="button" id="{{discussion_id}}" onclick="addComment()" value="Reply">
+          </div>
+
+          <div id="result">
+            {{#each comment}}
+            <ol class="comments-list text-left ">
+              <li> User Comment: {{comment_text}}</li>
+            </ol>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+<script src="/public/js/discussion.js"></script>
+<script>
+  function addComment() {
+    var id = event.target.id;
+    var test = id + "userComment";
+    var resultTextElement = document.getElementById(id);
+    var userComment = document.getElementById(test).value;
+    // alert(userComment);
+    let li = document.createElement("li");
+    li.appendChild(document.createTextNode(userComment));
+    resultTextElement.appendChild(li);
+
+    if (userComment != "") {
+      $.ajax({
+        url: "http://localhost:3000/comment",
+        method: 'POST',
+        dataType: 'json',
+        data: { "discussion_id": id, "comment": userComment },
+        success: function (result) {
+          const data = userComment;
+        }
+      });
+    }
+    else {
+      alert("Please input reply");
+    }
+    window.location.href = 'http://localhost:3000/comment';
+    window.location.href = 'http://localhost:3000/discussion';
+  }
+</script>

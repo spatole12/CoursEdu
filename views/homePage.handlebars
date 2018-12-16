@@ -1,0 +1,118 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<div class="container container-position">
+  <div class="row">
+    <div class="col-sm ">
+      
+        <p class="progress-position">JavaScript Progress</p>
+        <div id="containerJavaScriptProgress">
+            <div class="progress-value1" id="javaScriptProgress">0%</div>
+        </div>
+
+    </div>
+    <div class="col-sm">
+      
+        <p class="progress-position">Python Progress</p>
+        <div id="containerPythonProgress">
+            <div class="progress-value1" id="pythonProgress">0%</div>
+        </div>
+
+    </div>
+    <div class="col-sm">
+      
+        <p class="progress-position">C++ Progress</p>
+        <div id="containerCplusProgress">
+            <div class="progress-value1" id="C++Progress">0%</div>
+        </div>
+
+    </div>
+    <div class="col-sm ">
+        <p class="progress-position">Java Progress</p>
+        <div id="containerJavaProgress">
+            <div class="progress-value1" id="javaProgress">0%</div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- for quiz score-->
+<div class="quiz-container">
+   <div class="row">
+        <div class="col-sm quiz-score-position">
+            <p class="quiz-title1-position">JavaScript Quiz Score</p>
+            <div id="containerJavaScriptQuiz">
+                <div class="progress-value2" id="javaScriptQuiz">0%</div>
+            </div>
+        </div>
+
+        <div class="col-sm quiz-score-position">
+            <p class="quiz-title1-position">Python Quiz Score</p>
+             <div id="containerPythonQuiz">
+                <div class="progress-value2" id="pythonQuiz">0%</div>
+            </div>
+        </div>
+
+        <div class="col-sm quiz-score-position">
+            <p class="quiz-title1-position">C++ Quiz Score</p>
+            <div id="containercPlusQuiz">
+                <div class="progress-value2" id="cPlusQuiz">0%</div>
+            </div>
+        </div>
+
+        <div class="col-sm quiz-score-position">
+            <p class="quiz-title1-position">Java Quiz Score</p>
+            <div id="containerJavaQuiz">
+                <div class="progress-value2" id="javaQuiz">0%</div>
+            </div>
+        </div>
+   </div>
+</div>
+
+
+
+
+
+
+

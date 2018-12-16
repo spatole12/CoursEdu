@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">How to install</h1>
+
+<div class="text-position-par1">
+    <p class="lead"><h2 class = "font_java">Java Development Kit:</h2>
+    JDK (Java SE Development Kit) includes a complete JRE (Java Runtime Environment) plus tools for developing, debugging, and monitoring Java applications. After downloading the SDK, follow the instructions of the installation package.
+    
+    
+
+    <p class="lead">Java SE is freely available from the link <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" class="link_t">Download Java.</a> You can download a version based on your operating system.</p> 
+     
+    <img src="/public/css/pic18.jpg" alt="Issue displaying image!">
+
+    <br><p class="lead"><h2 class = "font_java">Setting Up the Path for Windows</h2>
+      Assuming you have installed Java in c:\Program Files\java\jdk directory −<br>
+      1) Right-click on 'My Computer' and select 'Properties'.<br>
+      2) Click the 'Environment variables' button under the 'Advanced' tab.<br>
+      3) Now, alter the 'Path' variable so that it also contains the path to the Java executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', then change your path to read 'C:\WINDOWS\SYSTEM32;c:\Program Files\java\jdk\bin'.<br>
+      <br><h2 class = "font_java">Setting Up the Path for Linux, UNIX, Solaris, FreeBSD</h2>
+      1) Environment variable PATH should be set to point to where the Java binaries have been installed. Refer to your shell documentation, if you have trouble doing this.<br>
+      2) Example, if you use bash as your shell, then you would add the following line to the end of your '.bashrc: export PATH = /path/to/java:$PATH'
+    <p></p>
+    <form action="/java" method="POST" class="lead">
+        <button type="submit" class="btn btn-lg btn-secondary button-position">Prev</button>
+    </form>
+    <form action="/java_2" method="POST" class="lead">
+        <button type="submit" class="btn btn-lg btn-secondary button-position">Next</button>
+    </form>
+</div>
+

@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/homePage">CoursEdu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="/homePage">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JavaScript">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Python">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cPlus">C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Java">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Discussion">Discussion</a>
+          </li>
+        </ul>
+        
+        <a class="nav-link" href="javascript:contact();">Contact</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Information
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+        </div>
+
+      </div>
+</nav>
+
+<h1 class="cover-heading text-position-head">How to install</h1>
+
+<div class="text-position-par1">
+    <p class="lead">JavaScript can be run on the client-side as long as you have a browser such as Chrome or Firefox. If you want to run JavaScript on a server, you can install NodeJS.</p>
+    
+    <img src="/public/css/pic6.png" alt="Issue displaying image!" class="pic6">
+
+    <p class="lead"><a href="https://nodejs.org/en/download/" target="_blank" class="link_t">Please click here</a> to install NodeJS. You can test your installation with a simple "hello.js" file. In the file include the line "console.log("Hello, World!")" and use "node hello.js" in your terminal to execute the file.</p> 
+    
+    <img src="/public/css/pic1.png" alt="Issue displaying image!">
+    <img src="/public/css/pic4.png" alt="Issue displaying image!">
+    
+    <p class="lead">NodeJS has many different packages and libraries that can be used through the node package manager (npm). To install these packages, use the command, "npm install name_of_package_here --save". The "--save" is an optional command to save the package name in you package.json file. This will allow your web application to refer to the "node_modules" folder that will be created after using "npm install", which contains all the relevant files of the particular package or library.</p>
+    
+    <form action="/javascript" method="POST" class="lead">
+        <button type="submit" class="btn btn-lg btn-secondary button-position">Prev</button>
+    </form>
+    <form action="/javascript_2" method="POST" class="lead">
+        <button type="submit" class="btn btn-lg btn-secondary button-position">Next</button>
+    </form>
+</div>
